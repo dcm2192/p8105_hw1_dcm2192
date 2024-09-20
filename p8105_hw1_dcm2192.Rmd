@@ -1,0 +1,13 @@
+---
+title: "P8105 HW1 - dcm2192"
+author: "Dylan Morgan"
+date: "2024-09-21"
+output: github_document
+---
+
+```{r setup, message = FALSE}
+library(tidyverse)
+```
+
+This is the file for P8105 HW1.
+
