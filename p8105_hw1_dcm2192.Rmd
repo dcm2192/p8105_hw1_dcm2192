@@ -9,5 +9,4 @@ output: github_document
 library(tidyverse)
 ```
 
-This is the file for P8105 HW1.
-
+This file will include answers to HW1 questions.
