@@ -7,6 +7,20 @@ output: github_document
 
 ```{r setup, message = FALSE}
 library(tidyverse)
+library(tidyr)
 ```
 
 This file will include answers to HW1 questions.
+
+## Problem 1
+
+Load `penguins` dataset.
+```{r}
+data("penguins", package = "palmerpenguins")
+```
+
+The `penguins` dataset provides information regarding the locations, classifications, and physical attributes of the penguins. Specifically, it describes the `species`, `island`, `bill_length_mm`, `bill_depth_mm`, `flipper_length_mm`, `body_mass_g`, `sex`, and `year` of each penguin. The penguins are classified by `species` as either Adelie, Chinstrap, or Gentoo. Each penguin comes from one of three islands from the `island` variable: Biscoe, Dream, and Torgersen. The size of their bills, measured in millimeters, are shown as decimals in `bill_length_mm` and `bill_depth_mm`, respectively. The length of their flippers, measured in millimeters, are shown as integers in `flipper_length_mm`. Their body mass, measured in grams, is shown as integers in `body_mass_g`. Their sex is categorized as either female or male, as shown in `sex`. The `year` column is provided as integers, with values ranging from `r min(pull(penguins, year))` to `r max(pull(penguins, year))`. The `penguins` dataset contains `r nrow(penguins)` observations and `r ncol(penguins)` variables. The mean flipper length is `r drop_na(penguins, flipper_length_mm) |> mean(pull(penguins, flipper_length_mm))`mm. 
+
+
+
+
