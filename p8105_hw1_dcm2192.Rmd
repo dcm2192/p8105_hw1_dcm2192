@@ -35,4 +35,18 @@ ggplot(penguins,
 ggsave("penguins_flipper_bill_plot.pdf")
 ```
 
+## Problem 2
+
+*Create data frame.*
+```{r}
+prob2_df <- 
+  tibble(
+    norm_samp = rnorm(n = 10, mean = 1), 
+    samp_greater_than_0 = norm_samp > 0, 
+    char_vec = c("John", "Bob", "Mark", "Jesse", "Mary", "Barbie", "Molly", "Terry", "Tom", "Ralph"), 
+    factor_vec = factor(c("urban", "urban", "rural", "suburban", "suburban", "urban", "rural", "urban", "rural", "urban"))
+  )
+```
+
+
 
